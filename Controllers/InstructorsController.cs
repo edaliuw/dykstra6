@@ -21,6 +21,7 @@ namespace ContosoUniversity.Controllers
         }
 
         // GET: Instructors
+        // Replaced Index Method for Eager Loading in Dykstra 6
         public async Task<IActionResult> Index(int? id, int? courseID)
         {
             var viewModel = new InstructorIndexData();
